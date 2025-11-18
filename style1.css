@@ -1,0 +1,504 @@
+@font-face {
+    font-family: "Lekton";
+    src: url("fonts/Lekton-Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+.proyectos {
+    background-color: #fffef5;
+    overflow: hidden;
+    width: 100%;
+    min-width: 1512px;
+    min-height: 2015px;
+    position: relative;
+}
+
+.proyectos .img {
+    height: 803px;
+    top: 821px;
+    position: absolute;
+    width: 1512px;
+    left: 0;
+}
+
+.proyectos .clip-path-group {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+
+
+.proyectos .clip-path-group-2 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 850px;
+    left: 0;
+}
+
+.proyectos .clip-path-group-3 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 1700px;
+    left: 0;
+}
+
+.proyectos .nav-bar {
+    display: flex;
+    width: 1441px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 16px 45px;
+    position: absolute;
+    top: 20px;
+    left: calc(50.00% - 720px);
+    background-color: #54266c;
+    border-radius: 99px;
+}
+
+.nav-bar .section:hover .text-wrapper {
+    color: #8359A1;
+    cursor: pointer;
+}
+
+
+.proyectos .section {
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    height: 54px;
+}
+
+.proyectos .text-wrapper {
+    position: absolute;
+    top: calc(50.00% - 16px);
+    left: calc(50.00% - 64px);
+    font-family: "Lekton", sans-serif;
+    font-weight: 700;
+    color: #dfcee6;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.proyectos .logo {
+    position: absolute;
+    top: 0;
+    left: calc(50.00% - 67px);
+    width: 133px;
+    height: 54px;
+}
+
+.proyectos .div {
+    left: calc(50.00% - 73px);
+    position: absolute;
+    top: calc(50.00% - 16px);
+    font-family: "Lekton", sans-serif;
+    font-weight: 700;
+    color: #dfcee6;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.proyectos .text-wrapper-2 {
+    left: calc(50.00% - 65px);
+    position: absolute;
+    top: calc(50.00% - 16px);
+    font-family: "Lekton", sans-serif;
+    font-weight: 700;
+    color: #dfcee6;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.proyectos .group {
+    position: absolute;
+    top: 166px;
+    left: 0;
+    width: 1512px;
+    height: 553px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.proyectos .separator {
+    margin-left: 76px;
+    width: 654px;
+    height: 85px;
+    position: relative;
+}
+
+.proyectos .separador {
+    position: absolute;
+    width: 26.30%;
+    height: 37.65%;
+    top: 0;
+    left: 0;
+}
+
+.proyectos .sobre-m {
+    position: absolute;
+    width: 65.70%;
+    height: 0%;
+    top: -60px;
+    left: 25.58%;
+    font-family: "Lekton", sans-serif;
+    font-weight: 700;
+    color: #54266c;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.proyectos .maki-arrow {
+    position: absolute;
+    width: 14.53%;
+    top: -50px;
+    left: 0;
+    height: 25px;
+    aspect-ratio: 1;
+}
+
+.proyectos .quien-es-luisa-gonz {
+    position: absolute;
+    width: 100%;
+    height: 81.18%;
+    top: -20px;
+    left: 0;
+    font-family: "Helvetica World-Regular", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.proyectos .span {
+    color: #724897;
+}
+
+.proyectos .text-wrapper-3 {
+    font-family: "Helvetica-Bold", Helvetica;
+    font-weight: 700;
+    color: #54266c;
+}
+
+.proyectos .text-wrapper {
+    position: absolute;
+    top: calc(50.00% - 35%);
+    left: calc(50.00% - 64px);
+    font-family: "Lekton", sans-serif;
+    font-weight: 600;
+    color: #dfcee6;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.logo-navbar {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.logo-navbar:hover {
+    opacity: 0.7;
+}
+
+
+.proyectos .carrusel-UX {
+    display: flex;
+    width: 1512px;
+    height: 449px;
+    top: -50px;
+    position: relative;
+    align-items: center;
+    gap: 34px;
+    padding: 5px 60px;
+}
+
+.proyectos .proyecto:hover {
+    color: #8359A1;
+    cursor: pointer;
+    transform: translateY(-5px);
+    background-color: #401954;
+    box-shadow: 0 8px 20px rgba(88, 16, 121, 0.716);
+}
+
+.proyectos .proyecto {
+    position: relative;
+    width: 438px;
+    height: 439px;
+    background-color: #54266c;
+    border-radius: 44px;
+    overflow: hidden;
+}
+
+
+
+
+.proyectos .frame {
+    position: absolute;
+    top: 15px;
+    left: calc(50.00% - 205px);
+    width: 410px;
+    height: 227px;
+    border-radius: 32px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.proyectos .p {
+    position: absolute;
+    top: 253px;
+    left: 18px;
+    width: 292px;
+    font-family: "Helvetica-Bold", Helvetica;
+    font-weight: 700;
+    color: #fffef5;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.proyectos .png-transparent-wrapper {
+    position: absolute;
+    top: 253px;
+    left: 342px;
+    width: 57px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 10px;
+    border-radius: 50%;
+}
+
+.proyectos .png-transparent {
+    margin-top: -1px;
+    height: 50px;
+    margin-left: -1px;
+    width: 50px;
+    border-radius: 22%;
+
+
+}
+
+.proyectos .background {
+    margin-left: 5px;
+    height: 220px;
+    width: 400px;
+    border-radius: 30px;
+
+
+}
+
+.proyectos .text-wrapper-4 {
+    position: absolute;
+    top: 316px;
+    left: 18px;
+    width: 375px;
+    font-family: "Helvetica-Regular", Helvetica;
+    font-weight: 400;
+    color: #fffef5;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.proyectos .frame-2 {
+    position: absolute;
+    top: 15px;
+    left: calc(50.00% - 205px);
+    width: 410px;
+    height: 227px;
+    border-radius: 32px;
+    background-image: url(./img/BURGER-HOUSE-1-2.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.proyectos .frame-3 {
+    position: absolute;
+    top: 15px;
+    left: calc(50.00% - 205px);
+    width: 410px;
+    height: 227px;
+    border-radius: 32px;
+    background-image: url(./img/BURGER-HOUSE-1-5.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.proyectos .frame-4 {
+    position: absolute;
+    top: 752px;
+    left: 0;
+    width: 1512px;
+    height: 537px;
+}
+
+.proyectos .div-2 {
+    position: absolute;
+    width: 43.25%;
+    height: 12.85%;
+    top: 0;
+    left: 5.09%;
+    font-family: "Helvetica World-Regular", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.proyectos .carrusel-diseo-g {
+    display: flex;
+    width: 1512px;
+    align-items: center;
+    gap: 34px;
+    padding: 5px 60px;
+    position: absolute;
+    top: 88px;
+    left: calc(50.00% - 756px);
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.proyectos .carrusel-diseo-g::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+.proyectos .BURGER-HOUSE-wrapper {
+    position: absolute;
+    top: 15px;
+    left: calc(50.00% - 205px);
+    width: 410px;
+    height: 227px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.proyectos .BURGER-HOUSE {
+    height: 235px;
+    margin-left: -1px;
+    width: 417px;
+    aspect-ratio: 1.78;
+    object-fit: cover;
+}
+
+.proyectos .frame-5 {
+    position: absolute;
+    top: 1322px;
+    left: 0;
+    width: 1512px;
+    height: 537px;
+}
+
+.proyectos .carrusel-social {
+    display: flex;
+    width: 1512px;
+    align-items: center;
+    gap: 34px;
+    padding: 5px 60px;
+    position: absolute;
+    top: 88px;
+    left: calc(50.00% - 756px);
+}
+
+.proyectos .frame-6 {
+    position: absolute;
+    top: 15px;
+    left: calc(50.00% - 205px);
+    width: 410px;
+    height: 227px;
+    border-radius: 32px;
+    background-image: url(./img/BURGER-HOUSE-1-6.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.proyectos .frame-7 {
+    position: absolute;
+    top: 15px;
+    left: calc(50.00% - 205px);
+    width: 410px;
+    height: 227px;
+    border-radius: 32px;
+    background-image: url(./img/BURGER-HOUSE-1-4.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.proyectos .frame-8 {
+    position: absolute;
+    top: 15px;
+    left: calc(50.00% - 205px);
+    width: 410px;
+    height: 227px;
+    border-radius: 32px;
+    background-image: url(./img/BURGER-HOUSE-1-7.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.proyectos .f-OOTER {
+    position: absolute;
+    top: 1910px;
+    left: calc(50.00% - 766px);
+    width: 1531px;
+    height: 105px;
+    background-color: #e0cee6;
+}
+
+.proyectos .text-wrapper-5 {
+    position: absolute;
+    top: calc(50.00% - 6px);
+    left: 49px;
+    font-family: "Lekton", sans-serif;
+    font-weight: 700;
+    color: #52256a;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.proyectos .text-wrapper-6 {
+    position: absolute;
+    top: calc(50.00% - 6px);
+    left: 1113px;
+    font-family: "Lekton", sans-serif;
+    font-weight: 700;
+    color: #52256a;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.proyectos .icon {
+    position: absolute;
+    top: 15px;
+    left: calc(50.00% - 42px);
+    width: 84px;
+    height: 84px;
+}
