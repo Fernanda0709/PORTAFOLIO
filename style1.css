@@ -1,3 +1,6 @@
+/* ------------------------------ */
+/*            TIPOGRAFÍA          */
+/* ------------------------------ */
 @font-face {
     font-family: "Lekton";
     src: url("fonts/Lekton-Bold.ttf") format("truetype");
@@ -5,500 +8,392 @@
     font-style: normal;
 }
 
+/* ------------------------------ */
+/*          CONTENEDOR BASE       */
+/* ------------------------------ */
+
 .proyectos {
-    background-color: #fffef5;
     overflow: hidden;
     width: 100%;
-    min-width: 1512px;
-    min-height: 2015px;
     position: relative;
 }
 
-.proyectos .img {
-    height: 803px;
-    top: 821px;
-    position: absolute;
-    width: 1512px;
-    left: 0;
-}
+/* ------------------------------ */
+/*         FONDOS DECORATIVOS     */
+/* ------------------------------ */
 
-.proyectos .clip-path-group {
-    position: absolute;
-    width: 100%;
-    height: auto;
+.fondo-repetido {
+    position: relative;
     top: 0;
     left: 0;
-}
-
-
-.proyectos .clip-path-group-2 {
-    position: absolute;
     width: 100%;
-    height: auto;
-    top: 850px;
-    left: 0;
+    min-height: 100vh;
+    background-image: url("svg/fondooo.svg");
+    background-repeat: repeat-y;
+    background-size: contain;
 }
 
-.proyectos .clip-path-group-3 {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 1700px;
-    left: 0;
-}
+/* ------------------------------ */
+/*             NAVBAR             */
+/* ------------------------------ */
 
-.proyectos .nav-bar {
+.nav-bar {
     display: flex;
-    width: 1441px;
-    height: 60px;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-    padding: 16px 45px;
-    position: absolute;
-    top: 20px;
-    left: calc(50.00% - 720px);
+    position: fixed;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 8%;
     background-color: #54266c;
     border-radius: 99px;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
 }
 
-.nav-bar .section:hover .text-wrapper {
-    color: #8359A1;
-    cursor: pointer;
-}
-
-
-.proyectos .section {
-    position: relative;
-    flex: 1;
-    flex-grow: 1;
-    height: 54px;
-}
-
-.proyectos .text-wrapper {
-    position: absolute;
-    top: calc(50.00% - 16px);
-    left: calc(50.00% - 64px);
-    font-family: "Lekton", sans-serif;
-    font-weight: 700;
-    color: #dfcee6;
-    font-size: 32px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-}
-
-.proyectos .logo {
-    position: absolute;
-    top: 0;
-    left: calc(50.00% - 67px);
-    width: 133px;
-    height: 54px;
-}
-
-.proyectos .div {
-    left: calc(50.00% - 73px);
-    position: absolute;
-    top: calc(50.00% - 16px);
-    font-family: "Lekton", sans-serif;
-    font-weight: 700;
-    color: #dfcee6;
-    font-size: 32px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-}
-
-.proyectos .text-wrapper-2 {
-    left: calc(50.00% - 65px);
-    position: absolute;
-    top: calc(50.00% - 16px);
-    font-family: "Lekton", sans-serif;
-    font-weight: 700;
-    color: #dfcee6;
-    font-size: 32px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-}
-
-.proyectos .group {
-    position: absolute;
-    top: 166px;
-    left: 0;
-    width: 1512px;
-    height: 553px;
-    display: flex;
-    flex-direction: column;
-    gap: 19px;
-}
-
-.proyectos .separator {
-    margin-left: 76px;
-    width: 654px;
-    height: 85px;
+.nav-bar .section {
     position: relative;
 }
 
-.proyectos .separador {
-    position: absolute;
-    width: 26.30%;
-    height: 37.65%;
-    top: 0;
-    left: 0;
-}
-
-.proyectos .sobre-m {
-    position: absolute;
-    width: 65.70%;
-    height: 0%;
-    top: -60px;
-    left: 25.58%;
+.nav-bar .text-wrapper {
     font-family: "Lekton", sans-serif;
-    font-weight: 700;
-    color: #54266c;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-}
-
-.proyectos .maki-arrow {
-    position: absolute;
-    width: 14.53%;
-    top: -50px;
-    left: 0;
-    height: 25px;
-    aspect-ratio: 1;
-}
-
-.proyectos .quien-es-luisa-gonz {
-    position: absolute;
-    width: 100%;
-    height: 81.18%;
-    top: -20px;
-    left: 0;
-    font-family: "Helvetica World-Regular", Helvetica;
-    font-weight: 400;
-    color: transparent;
-    font-size: 48px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.proyectos .span {
-    color: #724897;
-}
-
-.proyectos .text-wrapper-3 {
-    font-family: "Helvetica-Bold", Helvetica;
-    font-weight: 700;
-    color: #54266c;
-}
-
-.proyectos .text-wrapper {
-    position: absolute;
-    top: calc(50.00% - 35%);
-    left: calc(50.00% - 64px);
-    font-family: "Lekton", sans-serif;
+    font-size: 20px;
     font-weight: 600;
     color: #dfcee6;
-    font-size: 24px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
+    transition: 0.2s;
+}
+
+.nav-bar .text-wrapper:hover {
+    color: #8359A1;
 }
 
 .logo-navbar {
-    width: 100px;
-    height: auto;
-    display: block;
+    width: 80px;
+    transition: 0.2s;
+    align-items: center;
 }
 
 .logo-navbar:hover {
     opacity: 0.7;
 }
 
+/* ------------------------------ */
+/*          TÍTULO PRINCIPAL      */
+/* ------------------------------ */
 
-.proyectos .carrusel-UX {
+.contenido {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.group {
+    padding-top: 8%;
+}
+
+.separador {
     display: flex;
-    width: 1512px;
-    height: 449px;
-    top: -50px;
-    position: relative;
-    align-items: center;
-    gap: 34px;
-    padding: 5px 60px;
 }
 
-.proyectos .proyecto:hover {
-    color: #8359A1;
-    cursor: pointer;
-    transform: translateY(-5px);
-    background-color: #401954;
-    box-shadow: 0 8px 20px rgba(88, 16, 121, 0.716);
+.separator {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 2%;
 }
 
-.proyectos .proyecto {
-    position: relative;
-    width: 438px;
-    height: 439px;
-    background-color: #54266c;
-    border-radius: 44px;
-    overflow: hidden;
-}
-
-
-
-
-.proyectos .frame {
-    position: absolute;
-    top: 15px;
-    left: calc(50.00% - 205px);
-    width: 410px;
-    height: 227px;
-    border-radius: 32px;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-.proyectos .p {
-    position: absolute;
-    top: 253px;
-    left: 18px;
-    width: 292px;
-    font-family: "Helvetica-Bold", Helvetica;
-    font-weight: 700;
-    color: #fffef5;
-    font-size: 24px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.proyectos .png-transparent-wrapper {
-    position: absolute;
-    top: 253px;
-    left: 342px;
-    width: 57px;
-    height: 57px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 10px;
-    border-radius: 50%;
-}
-
-.proyectos .png-transparent {
-    margin-top: -1px;
-    height: 50px;
-    margin-left: -1px;
-    width: 50px;
-    border-radius: 22%;
-
-
-}
-
-.proyectos .background {
-    margin-left: 5px;
-    height: 220px;
-    width: 400px;
-    border-radius: 30px;
-
-
-}
-
-.proyectos .text-wrapper-4 {
-    position: absolute;
-    top: 316px;
-    left: 18px;
-    width: 375px;
-    font-family: "Helvetica-Regular", Helvetica;
-    font-weight: 400;
-    color: #fffef5;
+.sobre-m {
+    font-family: "Lekton";
     font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
+    font-weight: 700;
+    color: #54266c;
+    padding-left: 1%;
+
 }
 
-.proyectos .frame-2 {
-    position: absolute;
-    top: 15px;
-    left: calc(50.00% - 205px);
-    width: 410px;
-    height: 227px;
-    border-radius: 32px;
-    background-image: url(./img/BURGER-HOUSE-1-2.png);
-    background-size: cover;
-    background-position: 50% 50%;
+.quien-es-luisa-gonz {
+    font-size: 35px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-.proyectos .frame-3 {
-    position: absolute;
-    top: 15px;
-    left: calc(50.00% - 205px);
-    width: 410px;
-    height: 227px;
-    border-radius: 32px;
-    background-image: url(./img/BURGER-HOUSE-1-5.png);
-    background-size: cover;
-    background-position: 50% 50%;
+.span {
+    color: #724897;
 }
 
-.proyectos .frame-4 {
-    position: absolute;
-    top: 752px;
-    left: 0;
-    width: 1512px;
-    height: 537px;
+.text-wrapper-3 {
+    color: #54266c;
 }
 
-.proyectos .div-2 {
-    position: absolute;
-    width: 43.25%;
-    height: 12.85%;
-    top: 0;
-    left: 5.09%;
-    font-family: "Helvetica World-Regular", Helvetica;
-    font-weight: 400;
-    color: transparent;
-    font-size: 48px;
-    letter-spacing: 0;
-    line-height: normal;
-}
+/* ------------------------------ */
+/*          CARRUSELES            */
+/* ------------------------------ */
 
-.proyectos .carrusel-diseo-g {
+.carrusel-UX,
+.carrusel-diseo-g,
+.carrusel-social {
     display: flex;
-    width: 1512px;
-    align-items: center;
     gap: 34px;
-    padding: 5px 60px;
-    position: absolute;
-    top: 88px;
-    left: calc(50.00% - 756px);
-    overflow: hidden;
-    overflow-x: scroll;
+    padding: 5px 40px;
+    overflow-x: auto;
+    width: 100%;
+    margin: 25px auto 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.proyectos .carrusel-diseo-g::-webkit-scrollbar {
-    width: 0;
+.carrusel-UX::-webkit-scrollbar,
+.carrusel-diseo-g::-webkit-scrollbar,
+.carrusel-social::-webkit-scrollbar {
     display: none;
 }
 
-.proyectos .BURGER-HOUSE-wrapper {
-    position: absolute;
-    top: 15px;
-    left: calc(50.00% - 205px);
-    width: 410px;
-    height: 227px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* ------------------------------ */
+/*      TARJETAS DE PROYECTOS     */
+/* ------------------------------ */
+
+.proyecto {
+    width: 350px;
+    height: auto;
+    background-color: #54266c;
+    border-radius: 44px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    padding-bottom: 20px;
+}
+
+.proyecto:hover {
+    transform: translateY(-6px);
+    background-color: #401954;
+    box-shadow: 0 4px 10px rgba(88, 16, 121, 0.7);
+}
+
+.frame {
+    width: 100%;
+    height: auto;
     border-radius: 32px;
     overflow: hidden;
+    background-color: #0002;
 }
 
-.proyectos .BURGER-HOUSE {
-    height: 235px;
-    margin-left: -1px;
-    width: 417px;
-    aspect-ratio: 1.78;
-    object-fit: cover;
+.background {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
-.proyectos .frame-5 {
-    position: absolute;
-    top: 1322px;
-    left: 0;
-    width: 1512px;
-    height: 537px;
-}
-
-.proyectos .carrusel-social {
+.fila {
     display: flex;
-    width: 1512px;
     align-items: center;
-    gap: 34px;
-    padding: 5px 60px;
-    position: absolute;
-    top: 88px;
-    left: calc(50.00% - 756px);
+    /* 🔥 centra verticalmente */
+    gap: 12px;
+    /* espacio entre ambos */
 }
 
-.proyectos .frame-6 {
-    position: absolute;
-    top: 15px;
-    left: calc(50.00% - 205px);
-    width: 410px;
-    height: 227px;
-    border-radius: 32px;
-    background-image: url(./img/BURGER-HOUSE-1-6.png);
-    background-size: cover;
-    background-position: 50% 50%;
+.fila .p {
+    margin-top: 15px;
+    margin-left: 18px;
+    font-size: 22px;
+    color: #fffef5;
+    font-weight: bold;
 }
 
-.proyectos .frame-7 {
-    position: absolute;
-    top: 15px;
-    left: calc(50.00% - 205px);
-    width: 410px;
-    height: 227px;
-    border-radius: 32px;
-    background-image: url(./img/BURGER-HOUSE-1-4.png);
-    background-size: cover;
-    background-position: 50% 50%;
+.fila .png-transparent {
+    margin-right: 18px;
+    width: 40px;
+    border-radius: 10px;
 }
 
-.proyectos .frame-8 {
-    position: absolute;
-    top: 15px;
-    left: calc(50.00% - 205px);
-    width: 410px;
-    height: 227px;
-    border-radius: 32px;
-    background-image: url(./img/BURGER-HOUSE-1-7.png);
-    background-size: cover;
-    background-position: 50% 50%;
+
+
+.png-transparent-wrapper {
+    margin-left: 18px;
+    margin-top: 8px;
 }
 
-.proyectos .f-OOTER {
-    position: absolute;
-    top: 1910px;
-    left: calc(50.00% - 766px);
-    width: 1531px;
-    height: 105px;
+.text-wrapper-4 {
+    margin-left: 18px;
+    margin-top: 8px;
+    margin-right: 18px;
+    font-size: 18px;
+    color: #fffef5;
+    line-height: 1.4;
+}
+
+/* ------------------------------ */
+/*              TITULOS           */
+/* ------------------------------ */
+
+.frame-4,
+.frame-5 {
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.div-2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.span {
+    color: #724897;
+}
+
+/* ------------------------------ */
+/*              FOOTER            */
+/* ------------------------------ */
+
+.f-OOTER {
+    width: 100%;
     background-color: #e0cee6;
+    height: 120px;
+    margin-top: 120px;
+    position: relative;
 }
 
-.proyectos .text-wrapper-5 {
-    position: absolute;
-    top: calc(50.00% - 6px);
-    left: 49px;
-    font-family: "Lekton", sans-serif;
-    font-weight: 700;
+.text-wrapper-5,
+.text-wrapper-6 {
+    font-family: "Lekton";
+    font-size: 18px;
+    font-weight: 600;
     color: #52256a;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.proyectos .text-wrapper-6 {
-    position: absolute;
-    top: calc(50.00% - 6px);
-    left: 1113px;
-    font-family: "Lekton", sans-serif;
-    font-weight: 700;
-    color: #52256a;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
+.text-wrapper-5 {
+    left: 50px;
 }
 
-.proyectos .icon {
+.text-wrapper-6 {
+    right: 50px;
+}
+
+.icon {
     position: absolute;
-    top: 15px;
-    left: calc(50.00% - 42px);
-    width: 84px;
-    height: 84px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+}
+
+/* ------------------------------ */
+/*        RESPONSIVE TABLET       */
+/* ------------------------------ */
+
+@media (max-width: 1024px) {
+    .text-wrapper {
+        font-size: 20px;
+    }
+
+    .quien-es-luisa-gonz {
+        font-size: 38px;
+    }
+
+    .p {
+        font-size: 20px;
+    }
+
+    .text-wrapper-4 {
+        font-size: 16px;
+    }
+
+    .proyecto {
+        max-width: 350px;
+    }
+}
+
+/* ------------------------------ */
+/*        RESPONSIVE MOBILE       */
+/* ------------------------------ */
+
+@media (max-width: 768px) {
+
+    .nav-bar {
+        flex-wrap: nowrap;
+        height: 30px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        gap: 15px;
+    }
+
+    .logo-navbar {
+        width: 100%;
+        transition: 0.2s;
+    }
+
+    .nav-bar .text-wrapper {
+        font-family: "Lekton", sans-serif;
+        font-size: 80%;
+        font-weight: 600;
+        color: #dfcee6;
+        white-space: nowrap;
+        transition: 0.2s;
+    }
+
+
+    /*-----------------------------*/
+
+    .contenido {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .group {
+        padding-top: 20%;
+
+    }
+
+
+    .text-wrapper {
+        font-size: 80%;
+    }
+
+    .sobre-m {
+        font-size: 18px;
+    }
+
+    .quien-es-luisa-gonz {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .div-2 {
+        font-size: 32px;
+    }
+
+    .carrusel-UX,
+    .carrusel-diseo-g,
+    .carrusel-social {
+        padding: 5px 20px;
+        gap: 20px;
+    }
+
+    .proyecto {
+        max-width: 300px;
+    }
+
+.text-wrapper-5,
+    .text-wrapper-6 {
+        display: none;
+    }
+
+
+    .f-OOTER {
+        justify-content: center;
+        padding: 0;
+        height: 80px;
+    }
+
+    .icon {
+        width: 60px;
+    }
+
+
 }
