@@ -14,32 +14,37 @@
 
     <div class="fondo-repetido">
 
+        <button id="btnSubir" class="btn-subir">↑</button>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="nav-bar">
+            <a href="index.html#sobre-mi" class="section">
+                <div class="text-wrapper">Sobre Mí</div>
+            </a>
+
+            <a href="index.html#servicios" class="section">
+                <div class="text-wrapper">Servicios</div>
+            </a>
+
+            <a href="index.html#inicio" class="section1">
+                <img src="svg/LuisaClaro.svg" class="logo-navbar" />
+            </a>
+
+            <a href="proyectos.html#proyectos" class="section">
+                <div class="text-wrapper">Proyectos</div>
+            </a>
+
+            <a href="index.html#contacto" class="section">
+                <div class="text-wrapper">Contacto</div>
+            </a>
+        </div>
+
+        <!-- CONTENIDO -->
         <div class="proyectos">
-
-            <!-- NAV -->
-            <div class="nav-bar">
-                <a href="index.html#sobre-mi" class="section">
-                    <div class="text-wrapper">Sobre Mí</div>
-                </a>
-
-                <a href="index.html#servicios" class="section">
-                    <div class="text-wrapper">Servicios</div>
-                </a>
-
-                <a href="index.html#inicio" class="section1">
-                    <img src="svg/LuisaClaro.svg" class="logo-navbar" />
-                </a>
-
-                <a href="proyectos.html#proyectos" class="section">
-                    <div class="text-wrapper">Proyectos</div>
-                </a>
-
-                <a href="index.html#contacto" class="section">
-                    <div class="text-wrapper">Contacto</div>
-                </a>
-            </div>
-
-            <!-- CONTENIDO -->
             <div class="contenido">
                 <div class="group">
                     <div class="separator">
@@ -235,6 +240,13 @@
                     </a>
                 </div>
             </div>
+            <div class="menu-overlay" id="menuOverlay"></div>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html#sobre-mi">Sobre Mí</a>
+                <a href="index.html#servicios">Servicios</a>
+                <a href="proyectos.html#proyectos">Proyectos</a>
+                <a href="index.html#contacto">Contacto</a>
+            </div>
 
         </div>
 
@@ -250,8 +262,8 @@
             <p class="text-wrapper-6">Proyectos · UX/UI · Diseño · Contacto</p>
 
         </footer>
-
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
