@@ -81,6 +81,48 @@
 }
 
 /* ------------------------------ */
+/*        MENÚ MÓVIL  */
+/* ------------------------------ */
+
+.menu-toggle,
+.mobile-menu,
+.menu-overlay {
+    display: none;
+}
+
+.btn-subir {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #a56cc1;
+    color: white;
+    font-size: 26px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.btn-subir.mostrar {
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.btn-subir.oculto {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+/* ------------------------------ */
 /*          TÍTULO PRINCIPAL      */
 /* ------------------------------ */
 
@@ -115,7 +157,6 @@
 .quien-es-luisa-gonz {
     font-size: 35px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
     font-weight: bold;
     margin-top: 10px;
 }
@@ -187,9 +228,7 @@
 .fila {
     display: flex;
     align-items: center;
-    /* 🔥 centra verticalmente */
     gap: 12px;
-    /* espacio entre ambos */
 }
 
 .fila .p {
@@ -205,8 +244,6 @@
     width: 40px;
     border-radius: 10px;
 }
-
-
 
 .png-transparent-wrapper {
     margin-left: 18px;
@@ -237,10 +274,6 @@
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 25px;
-}
-
-.span {
-    color: #724897;
 }
 
 /* ------------------------------ */
@@ -283,63 +316,112 @@
 }
 
 /* ------------------------------ */
-/*        RESPONSIVE TABLET       */
-/* ------------------------------ */
-
-@media (max-width: 1024px) {
-    .text-wrapper {
-        font-size: 20px;
-    }
-
-    .quien-es-luisa-gonz {
-        font-size: 38px;
-    }
-
-    .p {
-        font-size: 20px;
-    }
-
-    .text-wrapper-4 {
-        font-size: 16px;
-    }
-
-    .proyecto {
-        max-width: 350px;
-    }
-}
-
-/* ------------------------------ */
 /*        RESPONSIVE MOBILE       */
 /* ------------------------------ */
 
 @media (max-width: 768px) {
 
+    /* NAVBAR */
     .nav-bar {
-        flex-wrap: nowrap;
-        height: 30px;
-        align-items: center;
-        justify-content: space-between;
+        display: none;
+        height: 60px;
         padding: 10px 20px;
-        gap: 15px;
+        justify-content: center;
     }
 
-    .logo-navbar {
-        width: 100%;
-        transition: 0.2s;
+    .nav-bar .section,
+    .nav-bar .section1 {
+        display: none !important;
     }
 
-    .nav-bar .text-wrapper {
-        font-family: "Lekton", sans-serif;
-        font-size: 80%;
-        font-weight: 600;
+    /* BOTÓN HAMBURGUESA */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: #8359A1;
+        border-radius: 50%;
+        cursor: pointer;
+        gap: 5px;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 1001;
+    }
+
+    .menu-toggle span {
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 2px;
+        transition: 0.3s;
+    }
+
+    /* MENÚ LATERAL */
+    .mobile-menu {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #54266c;
+        z-index: 1000;
+        flex-direction: column;
+        padding: 80px 30px 30px;
+        gap: 30px;
+        transition: right 0.3s ease;
+    }
+
+    .mobile-menu.active {
+        right: 0;
+    }
+
+    .mobile-menu a {
         color: #dfcee6;
-        white-space: nowrap;
-        transition: 0.2s;
+        font-family: "Lekton", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
     }
 
+    /* OVERLAY */
+    .menu-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+    }
 
-    /*-----------------------------*/
+    .menu-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
 
+    /* ANIMACIÓN BOTÓN */
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    /* CONTENIDO */
     .contenido {
         padding-left: 5%;
         padding-right: 5%;
@@ -347,9 +429,7 @@
 
     .group {
         padding-top: 20%;
-
     }
-
 
     .text-wrapper {
         font-size: 80%;
@@ -368,6 +448,7 @@
         font-size: 32px;
     }
 
+    /* CARRUSELES */
     .carrusel-UX,
     .carrusel-diseo-g,
     .carrusel-social {
@@ -379,11 +460,11 @@
         max-width: 300px;
     }
 
-.text-wrapper-5,
+    /* FOOTER */
+    .text-wrapper-5,
     .text-wrapper-6 {
         display: none;
     }
-
 
     .f-OOTER {
         justify-content: center;
@@ -395,5 +476,11 @@
         width: 60px;
     }
 
-
+    /* BOTÓN SUBIR */
+    .btn-subir {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
 }
+
